@@ -268,7 +268,7 @@ button{
 }
 
 .home__img{
-  height: 400px;
+  height: 300px;
   justify-self: center;
   margin-top: 5.5rem;
 }
@@ -781,7 +781,7 @@ button{
 
   .home__img{
     height: auto;
-    width: 320px;
+    width: 280px;
   }
   .home__buttons{
     flex-direction: column;
@@ -1097,7 +1097,7 @@ button{
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: goldenrod;
 }
 
 /* Fading animation */
@@ -1113,5 +1113,5 @@ button{
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-  .prev, .next, {font-size: 11px}
+  .prev, .next,.text {font-size: 11px}
 }
