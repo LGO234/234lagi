@@ -115,6 +115,9 @@ button{
   cursor: pointer;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
+  background-color: #daa5203b;
+  border-radius: 10px;
+  padding: 3px 8px 3px 8px;
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
@@ -1092,4 +1095,12 @@ table.ngarang tbody td {
 
 .container-isi p {
   text-align: left;
+}
+
+#more {
+  display: none;
+}
+
+#myRMbtn {
+  border-radius: 15px;
 }
