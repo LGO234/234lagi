@@ -669,6 +669,10 @@ button{
   .slideshow-container {
     width: 85%;
   }
+
+  .container-indah {
+    width: 85%;
+  }
 }
 
 /* For medium devices */
@@ -689,6 +693,10 @@ button{
   .slideshow-container {
     width: 85%;
   }
+
+  .container-indah {
+    width: 80%;
+    }
 }
 
 @media screen and (min-width: 767px){
@@ -789,6 +797,12 @@ button{
   .nav__logo-img {
     width: 200px;
   }
+
+  .container-indah {
+    width: 80%;
+  }
+
+
 }
 
 /* For large devices */
@@ -894,6 +908,10 @@ button{
     width: 80%;
   }
 
+  .container-indah {
+    width: 80%;
+  }
+
 }
 
 @media screen and (min-width: 1200px){
@@ -910,6 +928,10 @@ button{
     width: 180px;
     top: 30%;
     left: -3%;
+  }
+
+  .container-indah {
+    width: 75%;
   }
 }
 
@@ -986,4 +1008,41 @@ button{
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
+}
+
+
+/*Tulisan ngarang indah*/
+.container-indah {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  /* width: 75%; */
+}
+
+table.ngarang {
+  width: 100%;
+  text-align: left;
+  margin: 0 20px 0 0;
+  color: white;
+  border-collapse: collapse;
+  border-radius: 10px;
+
+}
+
+table.ngarang td, table.ngarang th {
+  border: 1px solid #8b8983;
+  padding: 10px 5px 10px;
+  border-radius: 10px;
+  border-collapse: collapse;
+  
+}
+
+table.ngarang th {
+  text-align: center;
+  font-weight: lighter;
+}
+
+table.ngarang tbody td {
+  color: #bfbfbf;
 }
