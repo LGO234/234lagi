@@ -673,6 +673,17 @@ button{
   .container-indah {
     width: 85%;
   }
+
+  .container-isi {
+    width: 80%;
+  }
+}
+/* device 320-576px width */
+@media screen and (max-width: 576px){
+.container-isi {
+  width: 95%;
+}
+
 }
 
 /* For medium devices */
@@ -697,6 +708,10 @@ button{
   .container-indah {
     width: 80%;
     }
+
+  .container-isi {
+    width: 78%;
+   }
 }
 
 @media screen and (min-width: 767px){
@@ -799,7 +814,11 @@ button{
   }
 
   .container-indah {
-    width: 70%;
+    width: 80%;
+  }
+
+  .container-isi {
+    width: 78%;
   }
 
 
@@ -912,6 +931,10 @@ button{
     width: 70%;
   }
 
+  .container-isi {
+    width : 68%;
+  }
+
 }
 
 @media screen and (min-width: 1200px){
@@ -931,6 +954,10 @@ button{
   }
 
   .container-indah {
+    width: 50%;
+  }
+
+  .container-isi {
     width: 60%;
   }
 }
@@ -1017,6 +1044,7 @@ button{
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  
   /* width: 75%; */
 }
 
@@ -1027,6 +1055,8 @@ table.ngarang {
   color: white;
   border-collapse: collapse;
   border-radius: 10px;
+  box-shadow: rgba(234, 168, 0, 0.35) 0px 5px 15px;
+
 
 }
 
@@ -1045,4 +1075,20 @@ table.ngarang th {
 
 table.ngarang tbody td {
   color: #bfbfbf;
+}
+
+/*Isi karangan indah*/
+.container-isi {
+  border: 1px solid #8b8983;
+  padding: 10px 10px 10px 10px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: rgba(234, 168, 0, 0.35) 0px 5px 15px;
+
+}
+
+.container-isi p {
+  text-align: left;
 }
