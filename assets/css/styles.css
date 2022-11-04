@@ -687,6 +687,16 @@ button{
   width: 95%;
 }
 
+.collapsible {
+  width: 90%;
+}
+
+.content-faq {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
 }
 
 /* For medium devices */
@@ -715,6 +725,16 @@ button{
   .container-isi {
     width: 78%;
    }
+
+   .collapsible {
+    width: 80%;
+  }
+
+  .content-faq {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
 }
 
 @media screen and (min-width: 767px){
@@ -822,6 +842,16 @@ button{
 
   .container-isi {
     width: 78%;
+  }
+
+  .collapsible {
+    width: 70%;
+  }
+
+  .content-faq {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
   }
 
 
@@ -938,6 +968,16 @@ button{
     width : 68%;
   }
 
+  .collapsible {
+    width: 70%;
+  }
+
+  .content-faq {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
 }
 
 @media screen and (min-width: 1200px){
@@ -962,6 +1002,14 @@ button{
 
   .container-isi {
     width: 63%;
+  }
+
+  .collapsible {
+    width: 80%;
+  }
+
+  .content-faq {
+    width: 80%;
   }
 }
 
@@ -1119,7 +1167,7 @@ table.ngarang tbody td {
   color: white;
   cursor: pointer;
   padding: 6px;
-  width: 80%;
+  /* width: 80%; */
   border: none;
   text-align: left;
   outline: none;
@@ -1149,9 +1197,9 @@ table.ngarang tbody td {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  width: 80%;
+  /* width: 80%; 
   margin-left: 10%;
-  margin-right: 10%;
+  margin-right: 10%; */
   text-align: left;
 }
 
