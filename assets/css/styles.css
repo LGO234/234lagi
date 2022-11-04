@@ -700,7 +700,7 @@ button{
     display: grid;
     grid-template-columns: .7fr;
     justify-content: center;
-  }
+  }.active
   .newsletter__description{
     padding: 0 3rem;
   }
@@ -1103,4 +1103,54 @@ table.ngarang tbody td {
 
 #myRMbtn {
   border-radius: 15px;
+}
+
+#myRMbtn:hover {
+  background-color: goldenrod;
+}
+
+
+/* FAQs */
+.faq-button {
+  text-align: center;
+}
+
+.collapsible {
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  width: 80%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  margin: 2px;
+  box-shadow: rgba(35, 33, 33, 0.35) 0px 2px 3px;
+}
+
+.aktif, .collapsible:hover {
+  background-color: rgba(218, 165, 32, 0.819);
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: var(--text-color);
+  font-size: 18px;
+  float: right;
+  margin-left: 5px;
+}
+
+.aktif:after {
+  content: "\2212";
+}
+
+.content-faq {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: left;
 }
