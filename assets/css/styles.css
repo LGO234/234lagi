@@ -1105,8 +1105,8 @@ table.ngarang tbody td {
   border-radius: 15px;
 }
 
-#myRMbtn:hover {
-  background-color: goldenrod;
+#myRMBtn:hover {
+  background-color: rgba(218, 165, 32, 0.819);
 }
 
 
@@ -1154,3 +1154,4 @@ table.ngarang tbody td {
   margin-right: 10%;
   text-align: left;
 }
+
