@@ -273,10 +273,16 @@ button{
 .home__img{
   height: 250px;
   justify-self: center;
-  margin-top: 5.5rem;
+  margin-top: 2.5rem;
 }
 
 .home__img1{
+  height: 400px;
+  justify-self: center;
+  margin-top: 3.5rem;
+}
+
+.home__img2{
   height: 250px;
   justify-self: center;
   margin-top: 5.5rem;
