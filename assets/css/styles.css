@@ -399,8 +399,10 @@ button{
   padding: .3rem 1.5rem;
 }
 
-.button--ghost:hover{
+a.button.button--ghost:hover {
+  color: black;
   background: none;
+  
 }
 
 .button--link{
@@ -1034,6 +1036,7 @@ button{
   max-width: 1200px;
   position: relative;
   margin: auto;
+
 }
 
 /* Next & previous buttons */
@@ -1114,7 +1117,6 @@ table.ngarang {
   border-collapse: collapse;
   border-radius: 10px;
   box-shadow: rgba(234, 168, 0, 0.35) 0px 5px 15px;
-
 
 }
 
