@@ -688,6 +688,11 @@ a.button.button--ghost:hover {
   .container-isi {
     width: 80%;
   }
+
+  .tv {
+    height: 100%;
+  }
+
 }
 /* device 320-576px width */
 @media screen and (max-width: 576px){
@@ -986,6 +991,7 @@ a.button.button--ghost:hover {
     margin-right: 10%;
   }
 
+
 }
 
 @media screen and (min-width: 1200px){
@@ -1020,6 +1026,10 @@ a.button.button--ghost:hover {
     width: 80%;
     margin-left: 10%;
     margin-right: 10%;
+  }
+
+  .tv {
+    height: 50%;
   }
 }
 
@@ -1214,3 +1224,17 @@ table.ngarang tbody td {
 
 }
 
+.tv {
+  width: 100%;
+  overflow: hidden;
+}
+
+.responsive-iframe {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
