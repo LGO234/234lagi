@@ -691,7 +691,7 @@ a.button.button--ghost:hover {
 
   .tv {
     height: 100%;
-    padding-top:30%;
+    margin-top:30%;
   }
 
 }
@@ -713,7 +713,7 @@ a.button.button--ghost:hover {
 
 .tv {
   height: 100%;
-  padding-top:30%;
+  margin-top:17%;
 }
 
 }
