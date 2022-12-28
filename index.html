@@ -1246,6 +1246,21 @@
     background-color: goldenrod;
   }
 
+
+  /* SideBar */
+  .user-view,
+  .sidemenu {
+    position: relative;
+    height: 100%;
+    text-align: center;
+  }
+  .sidemenu>li {
+    padding: 14.28% 14.28% 14.28% 14.28%;
+    border-bottom: solid;
+  }
+
+
+
   /* Marquee */
   .announcement {
     width:100% ;
@@ -1533,21 +1548,11 @@
                     <a rel="nofollow noopener" href="https://lgo234.net/" target="_blank" class="button button--ghost">LOGIN</a>
                     <a rel="nofollow noopener" href="https://lgo234.net/register" target="_blank" class="button button--ghost">DAFTAR</a>
                       
-                    <button on="tap:sidebar1" class="hamburger-button">
+                    <button on="tap:sidebar11" class="hamburger-button">
                         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="white" class="bi bi-list" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
                       </svg>
-                      </button>
-
-                    <amp-sidebar id="sidebar1" layout="nodisplay" style="width:200px; height:fit-content">
-                          <ul class="sidemenu">
-                            <li><a href="https://lgo234.net/">Home</a></li>
-                            <li><a href="https://lgo234.net/">Home</a></li>
-                            <li><a href="https://lgo234.net/">Home</a></li>
-                            <li><a href="https://lgo234.net/">Home</a></li>
-                            <li><a href="https://lgo234.net/">Home</a></li>
-                          </ul>
-                    </amp-sidebar>
+                    </button>
                 </nav>  
               </nav>
               
@@ -1555,6 +1560,19 @@
           </header>
           
           <!--==================== HOME GAME MENU ====================-->
+          <amp-sidebar id="sidebar11" layout="nodisplay" side="left" style="width:150px;">
+            <div class="user-view">
+                <ul class="sidemenu">
+                  <li><a href="https://lgo234.net/">HOME</a></li>
+                  <li><a href="https://lgo234.net/">PERMAINAN</a></li>
+                  <li><a href="https://lgo234.net/">PROMOSI</a></li>
+                  <li><a href="https://lgo234.net/">REFERRAL</a></li>
+                  <li><a href="https://lgo234.net/">RTP LIVE</a></li>
+                  <li><a href="https://lgo234.net/">INFO</a></li>
+                  <li><a href="https://lgo234.net/">HUBUNGI KAMI</a></li>
+                </ul>
+            </div>
+          </amp-sidebar>
 
           <main class="main">
             <div class="game-wrapper">
@@ -1599,10 +1617,6 @@
                 
               </amp-carousel>
             </div>
-
-
-
-
 
               <!--==================== CAROUSEL ====================-->
               <div class="carousel-inner">
