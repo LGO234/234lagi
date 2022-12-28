@@ -40,6 +40,7 @@
           <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
           <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
           <script async="async" custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+          <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
           
 
 
@@ -77,7 +78,7 @@
     --text-color-light: hsl(var(--hue), 4%, 55%);
 
     /*Green gradient*/
-    --body-color: linear-gradient(90deg, hsl(0, 0%, 5%) 0%, hsl(39, 52%, 23%) 100%);
+    --body-color: linear-gradient(90deg, hsl(26, 66%, 8%) 0%, hsl(39, 77%, 1%) 100%);
     --container-color: linear-gradient(136deg, hsl(0, 0%, 4%) 0%, hsl(43, 36%, 34%) 100%);
     
     /*Red gradient*/
@@ -190,9 +191,9 @@
     cursor: pointer;
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
-    background-color: #daa5203b;
+    background-color: #daa52011;
     border-radius: 10px;
-    padding: 3px 8px 3px 8px;
+    padding: 5px 5px 0px 5px;
   }
 
   /*=============== REUSABLE CSS CLASSES ===============*/
@@ -244,6 +245,15 @@
     align-items: center;
   }
 
+  .nav1 {
+    height: var(--header-height);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 5px;
+
+  }
+
   .nav__logo{
     display: flex;
     align-items: center;
@@ -255,29 +265,20 @@
     width: 168px;
   }
 
-  .nav__link,
   .nav__logo,
-  .nav__toggle,
   .nav__close{
     color: var(--title-color);
   }
 
-  .nav__toggle{
-    font-size: 1.25rem;
-    cursor: pointer;
-  }
-
   @media screen and (max-width: 767px){
-    .nav__menu{
-      position: fixed;
-      width: 100%;
-      background: var(--container-color);
-      top: -70%;
-      left: 0;
-      padding: 3.5rem 0;
-      transition: .4s;
-      z-index: var(--z-fixed);
-      border-radius: 0 0 1.5rem 1.5rem;
+   
+
+    .game-wrapper {
+      margin-top:55px;
+    }
+    
+    span {
+      font-size: 13px;
     }
   }
 
@@ -296,22 +297,7 @@
     cursor: pointer;
   }
 
-  .nav__list{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 1.5rem;
-  }
 
-  .nav__link{
-    text-transform: uppercase;
-    font-weight: var(--font-black);
-    transition: .4s;
-  }
-
-  .nav__link:hover{
-    color: gold;
-  }
 
   /* Show menu */
   .show-menu{
@@ -340,7 +326,6 @@
   }
   /*=============== CAROUSEL ===============*/
   .game-wrapper {
-    margin-top: 80px;
     display: flex;
     place-content: center;
     background: linear-gradient(180deg,#856c2c 8.04%,#fbf4a0 64.01%,#856c2c 104.64%);
@@ -483,6 +468,7 @@
     font-weight: var(--font-medium);
     transition: .3s;
   }
+
 
   .button:hover{
     background-color:rgb(9, 9, 9);
@@ -762,6 +748,14 @@
       margin-right: var(--mb-1);
     }
 
+    .game-wrapper {
+      margin-top: 55px;
+    }
+
+    a.button.button--ghost {
+      display: none;
+    }
+
     .home__img{
       height: auto;
       width: 280px;
@@ -806,6 +800,19 @@
   .container-isi {
     width: 95%;
   }
+  a.button.button--ghost {
+    display: none;
+  }
+
+  a.button.button--ghost.mob {
+    display: inline-block;
+    width: 49%;
+    text-align: center;
+    column-gap: 0.1px;
+  }
+  .mobile {
+    text-align: center;
+  }
 
   .carousel-inner {
     margin-top: 0px;
@@ -835,6 +842,10 @@
       grid-template-columns: .8fr;
       justify-content: center;
     }
+
+    .mob {
+    display: none;
+   }
 
     .carousel-inner {
     margin-top: 0px;
@@ -877,6 +888,10 @@
       margin: 0;
     }
 
+    .game-wrapper {
+      margin-top:80px;
+    }
+    
     .section{
       padding: 3rem 0 2rem;
     }
@@ -885,22 +900,20 @@
     padding-top: 0px;
     }
 
+    button.hamburger-button {
+      display: none;
+    }
+    
+
     .nav{
       height: calc(var(--header-height) + 1.5rem);
     }
     .nav__img,
-    .nav__close,
-    .nav__toggle{
+    .nav__close
+    {
       display: none;
     }
-    .nav__list{
-      flex-direction: row;
-      column-gap: 1.5rem;
-    }
-    .nav__link{
-      text-transform: initial;
-      font-weight: initial;
-    }
+   
 
     .home__content{
       padding: 8rem 0 2rem;
@@ -998,6 +1011,11 @@
 
   /* For large devices */
   @media screen and (min-width: 992px){
+    
+    button.hamburger-button {
+      display: none;
+    }
+    
     .container{
       margin-left: auto;
       margin-right: auto;
@@ -1126,6 +1144,10 @@
   }
 
   @media screen and (min-width: 1200px){
+
+    button.hamburger-button {
+      display: none;
+    }
     .home__img{
       height: 420px;
     }
@@ -1507,41 +1529,29 @@
                       <img src="assets/img/lgo234-logo.png" alt="" class="nav__logo-img">
                   </a>
 
-                  <div class="nav__menu" id="nav-menu">
-                      <ul class="nav__list">
-                          <li class="nav__item">
-                              <a href="#home" class="nav__link active-link">Home</a>
-                          </li>
-
-                          <li class="nav__item">
-                              <a href="#games" class="nav__link">Games</a>
-                          </li>
-
-                          <li class="nav__item">
-                              <a href="#about" class="nav__link">Tentang</a>
-                          </li>
-
-                          <li class="nav__item">
-                              <a href="#promosi" class="nav__link">Promosi<span style="font-size:13px; color: red; padding-left: 2px;"><strong><sup>HOT</sup></strong></span></a>
-                          </li>
-
-                          
-                          <a rel="nofollow noopener" href="https://lgo234.net/" target="_blank" class="button button--ghost">LOGIN</a>
-                          <a rel="nofollow noopener" href="https://lgo234.net/register" target="_blank" class="button button--ghost">DAFTAR</a>
-                      </ul>
-
-                      <div class="nav__close" id="nav-close">
-                          <i class='bx bx-x'></i>
-                      </div>
-
+                <nav class="nav1">
+                    <a rel="nofollow noopener" href="https://lgo234.net/" target="_blank" class="button button--ghost">LOGIN</a>
+                    <a rel="nofollow noopener" href="https://lgo234.net/register" target="_blank" class="button button--ghost">DAFTAR</a>
                       
-                  </div>
+                    <button on="tap:sidebar1" class="hamburger-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="white" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                      </svg>
+                      </button>
 
-                  <div class="nav__toggle" id="nav-toggle">
-                      <i class='bx bx-grid-alt'>SS</i>
-                  </div>
-
+                    <amp-sidebar id="sidebar1" layout="nodisplay" style="width:200px; height:fit-content">
+                          <ul class="sidemenu">
+                            <li><a href="https://lgo234.net/">Home</a></li>
+                            <li><a href="https://lgo234.net/">Home</a></li>
+                            <li><a href="https://lgo234.net/">Home</a></li>
+                            <li><a href="https://lgo234.net/">Home</a></li>
+                            <li><a href="https://lgo234.net/">Home</a></li>
+                          </ul>
+                    </amp-sidebar>
+                </nav>  
               </nav>
+              
+
           </header>
           
           <!--==================== HOME GAME MENU ====================-->
@@ -1552,37 +1562,37 @@
                             delay="2000" aria-label="Basic usage carousel" style="padding-top: 8px;">
                   <div class="game-menu">
                       <a target="_blank" rel="noopener nofollow" href="https://lgo234.net/slots">
-                        <amp-img src="assets/img/icon/slot-icon.png" width="30" height="30"></amp-img><br>
+                        <amp-img src="assets/img/icon/slot-icon.png" width="28" height="28"></amp-img><br>
                         <span>Slots</span>
                       </a>
                   </div>
                   <div class="game-menu">
                     <a target="_blank" rel="noopener nofollow" href="https://lgo234.net/slots">
-                      <amp-img src="assets/img/icon/slot-icon.png" width="30" height="30"></amp-img><br>
+                      <amp-img src="assets/img/icon/slot-icon.png" width="28" height="28"></amp-img><br>
                       <span>Slots</span>
                     </a>
                   </div>
                   <div class="game-menu">
                     <a target="_blank" rel="noopener nofollow" href="https://lgo234.net/slots">
-                      <amp-img src="assets/img/icon/slot-icon.png" width="30" height="30"></amp-img><br>
+                      <amp-img src="assets/img/icon/slot-icon.png" width="28" height="28"></amp-img><br>
                       <span>Slots</span>
                     </a>
                   </div>
                   <div class="game-menu">
                     <a target="_blank" rel="noopener nofollow" href="https://lgo234.net/slots">
-                      <amp-img src="assets/img/icon/slot-icon.png" width="30" height="30"></amp-img><br>
+                      <amp-img src="assets/img/icon/slot-icon.png" width="28" height="28"></amp-img><br>
                       <span>Slots</span>
                     </a>
                   </div>
                   <div class="game-menu">
                     <a target="_blank" rel="noopener nofollow" href="https://lgo234.net/slots">
-                      <amp-img src="assets/img/icon/slot-icon.png" width="30" height="30"></amp-img><br>
+                      <amp-img src="assets/img/icon/slot-icon.png" width="28" height="28"></amp-img><br>
                       <span>Slots</span>
                     </a>
                   </div>
                   <div class="game-menu">
                     <a target="_blank" rel="noopener nofollow" href="https://lgo234.net/slots">
-                      <amp-img src="assets/img/icon/slot-icon.png" width="30" height="30"></amp-img><br>
+                      <amp-img src="assets/img/icon/slot-icon.png" width="28" height="28"></amp-img><br>
                       <span>Slots</span>
                     </a>
                    </div>
@@ -1637,6 +1647,10 @@
                   <p class="marquee">HARAP MEMPERHATIKAN REKENING TUJUAN SEBELUM MELAKUKAN DEPOSIT. MEMBER TETAP BISA MENGIKUTI PROMO BONUS NEW MEMBER DAN PROMO BONUS LAINNYA KETIKA SUDAH DEPOSIT PULSA TANPA POTONGAN</p>
                 </div>
 
+                <div class="mobile">
+                <a rel="nofollow noopener" href="https://lgo234.net/" target="_blank" class="button button--ghost mob">LOGIN</a>
+                <a rel="nofollow noopener" href="https://lgo234.net/register" target="_blank" class="button button--ghost mob">DAFTAR</a>
+                </div>
               <section class="home container" id="home">
                   <div class="swiper home-swiper">
                       <div class="swiper-wrapper">
@@ -2453,15 +2467,6 @@
                     </div>
                 </section>
               </amp-accordion>
-              
-
-
-            
-
-
-              
-
-              
               
               <!--==================== End of FAQs ====================-->
               
